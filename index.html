@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BurnX Dashboard</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@18.2.0",
+          "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+          "ethers": "https://esm.sh/ethers@6.11.1"
+        }
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/index.css" />
+    <script>
+      window.__QUICK_DAPP_CONFIG__ = window.__QUICK_DAPP_CONFIG__ || {
+        title: "BurnX Dashboard",
+        logo: null,
+        details: "Track your BurnX rewards and CashX burn stats on PulseChain."
+      };
+    </script>
+  </head>
+  <body class="bg-gray-950 text-white min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="./src/main.jsx"></script>
+  </body>
+</html>
